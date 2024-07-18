@@ -13,6 +13,13 @@
             "{% endblock $1 %}"
         ]
     },
+    "block inline": {
+        "prefix": "blocki",
+        "description": "inline block tag django template",
+        "body": [
+            "{% block ${1:blockname} %}$2{% endblock $1 %}"
+        ]
+    },
     "comment": {
         "prefix": "comment",
         "description": "Comment tag django template",

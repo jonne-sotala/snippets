@@ -119,6 +119,12 @@
         "description": "HTML - Defines a push button",
         "scope": "text.html"
     },
+    "button.": {
+        "prefix": "button.",
+        "body": "<button class=\"$1\" type=\"$2\">$3</button>$4",
+        "description": "HTML - Defines a push button with class",
+        "scope": "text.html"
+    },
     "canvas": {
         "prefix": "canvas",
         "body": "<canvas id=\"$1\">$2</canvas>$3",
@@ -253,7 +259,7 @@
     },
     "form": {
         "prefix": "form",
-        "body": ["<form>", "\t$1", "</form>"],
+        "body": ["<form action=\"$1\" method=\"$2\">", "\t$3", "</form>"],
         "description": "HTML - Defines a form",
         "scope": "text.html"
     },
@@ -364,6 +370,12 @@
         "prefix": "input",
         "body": "<input type=\"$1\" name=\"$2\" value=\"$3\">$4",
         "description": "HTML - Defines an input field",
+        "scope": "text.html"
+    },
+    "input.": {
+        "prefix": "input.",
+        "body": "<input class=\"$1\" type=\"$2\" name=\"$3\" value=\"$4\">$5",
+        "description": "HTML - Defines an input field with class",
         "scope": "text.html"
     },
     "ins": {
@@ -558,6 +570,12 @@
         "description": "HTML - Defines a script",
         "scope": "text.html"
     },
+    "script inline": {
+        "prefix": "scripti",
+        "body": ["<script src=\"$1\"></script>"],
+        "description": "HTML - Defines an inline script",
+        "scope": "text.html"
+    },
     "section": {
         "prefix": "section",
         "body": ["<section>", "\t$1", "</section>"],
@@ -586,6 +604,12 @@
         "prefix": "span",
         "body": "<span>$1</span>$2",
         "description": "HTML - Defines a section in a document",
+        "scope": "text.html"
+    },
+    "span.": {
+        "prefix": "span.",
+        "body": "<span class=\"$1\">$2</span>$3",
+        "description": "HTML - Defines an input field with class",
         "scope": "text.html"
     },
     "strong": {
